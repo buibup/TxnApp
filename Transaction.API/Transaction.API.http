@@ -1,0 +1,47 @@
+@Transaction_API_HostAddress = http://localhost:5248
+@access_token = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6InVzZXItMDAxIiwiZXhwIjoxNzU1NDIzMzMwLCJpc3MiOiJUcmFuc2FjdGlvbkFQSSIsImF1ZCI6IlRyYW5zYWN0aW9uQVBJIn0.yJ26ZyuL__5TLlqtKhaeodsTbKsJTZMQa21AOuI5fwc
+@transactionId = db5bd365-d8f0-4d43-903e-93dbb425200f
+
+GET {{Transaction_API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+### Login
+POST {{Transaction_API_HostAddress}}/api/auth/login
+Content-Type: application/json
+
+{
+    "username": "user",
+    "password": "1234"
+}
+
+### Create Transaction
+POST {{Transaction_API_HostAddress}}/api/transactions
+Content-Type: application/json
+Authorization: Bearer {{access_token}}
+
+{
+    "amount": 100.00,
+    "description": "Test Transaction",
+    "date": "2025-08-17T00:00:00Z",
+    "type": "Expense"
+}
+
+### Get Transactions
+GET {{Transaction_API_HostAddress}}/api/transactions
+Accept: application/json
+Authorization: Bearer {{access_token}}
+
+### Update Transaction
+PUT {{Transaction_API_HostAddress}}/api/transactions/{{transactionId}}
+Content-Type: application/json
+Authorization: Bearer {{access_token}}
+
+{
+    "amount": 150.00,
+    "description": "Updated Transaction"
+}
+
+### Delete Transaction
+DELETE {{Transaction_API_HostAddress}}/api/transactions/{{transactionId}}
+Content-Type: application/json
+Authorization: Bearer {{access_token}}

@@ -1,0 +1,17 @@
+/Users/welcome/Desktop/codes/dotnet/BankApp/Transaction.Infrastructure/bin/Debug/net9.0/Transaction.Infrastructure.deps.json
+/Users/welcome/Desktop/codes/dotnet/BankApp/Transaction.Infrastructure/bin/Debug/net9.0/Transaction.Infrastructure.dll
+/Users/welcome/Desktop/codes/dotnet/BankApp/Transaction.Infrastructure/bin/Debug/net9.0/Transaction.Infrastructure.pdb
+/Users/welcome/Desktop/codes/dotnet/BankApp/Transaction.Infrastructure/obj/Debug/net9.0/Transaction.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+/Users/welcome/Desktop/codes/dotnet/BankApp/Transaction.Infrastructure/obj/Debug/net9.0/Transaction.Infrastructure.AssemblyInfoInputs.cache
+/Users/welcome/Desktop/codes/dotnet/BankApp/Transaction.Infrastructure/obj/Debug/net9.0/Transaction.Infrastructure.AssemblyInfo.cs
+/Users/welcome/Desktop/codes/dotnet/BankApp/Transaction.Infrastructure/obj/Debug/net9.0/Transaction.Infrastructure.csproj.CoreCompileInputs.cache
+/Users/welcome/Desktop/codes/dotnet/BankApp/Transaction.Infrastructure/obj/Debug/net9.0/Transaction.Infrastructure.dll
+/Users/welcome/Desktop/codes/dotnet/BankApp/Transaction.Infrastructure/obj/Debug/net9.0/refint/Transaction.Infrastructure.dll
+/Users/welcome/Desktop/codes/dotnet/BankApp/Transaction.Infrastructure/obj/Debug/net9.0/Transaction.Infrastructure.pdb
+/Users/welcome/Desktop/codes/dotnet/BankApp/Transaction.Infrastructure/obj/Debug/net9.0/ref/Transaction.Infrastructure.dll
+/Users/welcome/Desktop/codes/dotnet/BankApp/Transaction.Infrastructure/bin/Debug/net9.0/Transaction.Domain.dll
+/Users/welcome/Desktop/codes/dotnet/BankApp/Transaction.Infrastructure/bin/Debug/net9.0/Transaction.Domain.pdb
+/Users/welcome/Desktop/codes/dotnet/BankApp/Transaction.Infrastructure/obj/Debug/net9.0/Transaction.Infrastructure.csproj.AssemblyReference.cache
+/Users/welcome/Desktop/codes/dotnet/BankApp/Transaction.Infrastructure/obj/Debug/net9.0/Transact.6DA9D43A.Up2Date
+/Users/welcome/Desktop/codes/dotnet/BankApp/Transaction.Infrastructure/bin/Debug/net9.0/Transaction.Infrastructure.runtimeconfig.json
+/Users/welcome/Desktop/codes/dotnet/BankApp/Transaction.Infrastructure/obj/Debug/net9.0/Transaction.Infrastructure.genruntimeconfig.cache
