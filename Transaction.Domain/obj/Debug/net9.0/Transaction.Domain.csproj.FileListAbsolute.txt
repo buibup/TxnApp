@@ -9,3 +9,15 @@
 /Users/welcome/Desktop/codes/dotnet/BankApp/Transaction.Domain/obj/Debug/net9.0/refint/Transaction.Domain.dll
 /Users/welcome/Desktop/codes/dotnet/BankApp/Transaction.Domain/obj/Debug/net9.0/Transaction.Domain.pdb
 /Users/welcome/Desktop/codes/dotnet/BankApp/Transaction.Domain/obj/Debug/net9.0/ref/Transaction.Domain.dll
+D:\github\TxnApp\Transaction.Domain\bin\Debug\net9.0\Transaction.Domain.deps.json
+D:\github\TxnApp\Transaction.Domain\bin\Debug\net9.0\Transaction.Domain.dll
+D:\github\TxnApp\Transaction.Domain\bin\Debug\net9.0\Transaction.Domain.pdb
+D:\github\TxnApp\Transaction.Domain\obj\Debug\net9.0\Transaction.Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\github\TxnApp\Transaction.Domain\obj\Debug\net9.0\Transaction.Domain.AssemblyInfoInputs.cache
+D:\github\TxnApp\Transaction.Domain\obj\Debug\net9.0\Transaction.Domain.AssemblyInfo.cs
+D:\github\TxnApp\Transaction.Domain\obj\Debug\net9.0\Transaction.Domain.csproj.CoreCompileInputs.cache
+D:\github\TxnApp\Transaction.Domain\obj\Debug\net9.0\Transaction.Domain.sourcelink.json
+D:\github\TxnApp\Transaction.Domain\obj\Debug\net9.0\Transaction.Domain.dll
+D:\github\TxnApp\Transaction.Domain\obj\Debug\net9.0\refint\Transaction.Domain.dll
+D:\github\TxnApp\Transaction.Domain\obj\Debug\net9.0\Transaction.Domain.pdb
+D:\github\TxnApp\Transaction.Domain\obj\Debug\net9.0\ref\Transaction.Domain.dll

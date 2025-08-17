@@ -1,34 +1,40 @@
 {
   "format": 1,
   "restore": {
-    "/Users/welcome/Desktop/codes/dotnet/BankApp/Transaction.Application/Transaction.Application.csproj": {}
+    "D:\\github\\TxnApp\\Transaction.Application\\Transaction.Application.csproj": {}
   },
   "projects": {
-    "/Users/welcome/Desktop/codes/dotnet/BankApp/Transaction.Application/Transaction.Application.csproj": {
+    "D:\\github\\TxnApp\\Transaction.Application\\Transaction.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/welcome/Desktop/codes/dotnet/BankApp/Transaction.Application/Transaction.Application.csproj",
+        "projectUniqueName": "D:\\github\\TxnApp\\Transaction.Application\\Transaction.Application.csproj",
         "projectName": "Transaction.Application",
-        "projectPath": "/Users/welcome/Desktop/codes/dotnet/BankApp/Transaction.Application/Transaction.Application.csproj",
-        "packagesPath": "/Users/welcome/.nuget/packages/",
-        "outputPath": "/Users/welcome/Desktop/codes/dotnet/BankApp/Transaction.Application/obj/",
+        "projectPath": "D:\\github\\TxnApp\\Transaction.Application\\Transaction.Application.csproj",
+        "packagesPath": "C:\\Users\\Mongk\\.nuget\\packages\\",
+        "outputPath": "D:\\github\\TxnApp\\Transaction.Application\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "/Users/welcome/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\Mongk\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net9.0"
         ],
         "sources": {
-          "/usr/local/share/dotnet/library-packs": {},
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
-              "/Users/welcome/Desktop/codes/dotnet/BankApp/Transaction.Domain/Transaction.Domain.csproj": {
-                "projectPath": "/Users/welcome/Desktop/codes/dotnet/BankApp/Transaction.Domain/Transaction.Domain.csproj"
+              "D:\\github\\TxnApp\\Transaction.Domain\\Transaction.Domain.csproj": {
+                "projectPath": "D:\\github\\TxnApp\\Transaction.Domain\\Transaction.Domain.csproj"
               }
             }
           }
@@ -43,7 +49,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.200"
+        "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
         "net9.0": {
@@ -64,27 +70,33 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.201/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "/Users/welcome/Desktop/codes/dotnet/BankApp/Transaction.Domain/Transaction.Domain.csproj": {
+    "D:\\github\\TxnApp\\Transaction.Domain\\Transaction.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/welcome/Desktop/codes/dotnet/BankApp/Transaction.Domain/Transaction.Domain.csproj",
+        "projectUniqueName": "D:\\github\\TxnApp\\Transaction.Domain\\Transaction.Domain.csproj",
         "projectName": "Transaction.Domain",
-        "projectPath": "/Users/welcome/Desktop/codes/dotnet/BankApp/Transaction.Domain/Transaction.Domain.csproj",
-        "packagesPath": "/Users/welcome/.nuget/packages/",
-        "outputPath": "/Users/welcome/Desktop/codes/dotnet/BankApp/Transaction.Domain/obj/",
+        "projectPath": "D:\\github\\TxnApp\\Transaction.Domain\\Transaction.Domain.csproj",
+        "packagesPath": "C:\\Users\\Mongk\\.nuget\\packages\\",
+        "outputPath": "D:\\github\\TxnApp\\Transaction.Domain\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "/Users/welcome/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\Mongk\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net9.0"
         ],
         "sources": {
-          "/usr/local/share/dotnet/library-packs": {},
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -103,7 +115,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.200"
+        "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
         "net9.0": {
@@ -124,7 +136,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.201/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
