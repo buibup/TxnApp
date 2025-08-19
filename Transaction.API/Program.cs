@@ -7,6 +7,9 @@ using Transaction.Infrastructure.Data;
 using Microsoft.AspNetCore.Authorization;
 using System.Security.Claims;
 using Transaction.Domain.Entities;
+using Transaction.Application.Common;
+using Transaction.Infrastructure.Events;
+using Transaction.Application.EventAdapter;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -18,6 +21,9 @@ var connectionString = builder.Configuration.GetConnectionString("DefaultConnect
     ?? throw new InvalidOperationException("Connection string 'DefaultConnection' is not configured.");
 
 builder.Services.AddDbContext<AppDbContext>(opt => opt.UseSqlite(connectionString));
+
+builder.Services.AddScoped<IDomainEventDispatcher, DomainEventDispatcher>();
+builder.Services.AddMediatR(cfg => cfg.RegisterServicesFromAssemblyContaining<TransactionCreatedHandler>());
 
 var jwtSecret = builder.Configuration["Jwt:Secret"] ?? throw new InvalidOperationException("JWT Secret is not configured.");
 var jwtIssuer = builder.Configuration["Jwt:Issuer"] ?? throw new InvalidOperationException("JWT Issuer is not configured.");
