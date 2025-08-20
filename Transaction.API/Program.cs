@@ -10,6 +10,10 @@ using Transaction.Domain.Entities;
 using Transaction.Application.Common;
 using Transaction.Infrastructure.Events;
 using Transaction.Application.EventAdapter;
+using MediatR;
+using Transaction.Application.Commands.CreateTransaction;
+using Transaction.Application.Interfaces;
+using Transaction.Infrastructure.Repositories;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -24,6 +28,7 @@ builder.Services.AddDbContext<AppDbContext>(opt => opt.UseSqlite(connectionStrin
 
 builder.Services.AddScoped<IDomainEventDispatcher, DomainEventDispatcher>();
 builder.Services.AddMediatR(cfg => cfg.RegisterServicesFromAssemblyContaining<TransactionCreatedHandler>());
+builder.Services.AddScoped<ITransactionRepository, TransactionRepository>();
 
 var jwtSecret = builder.Configuration["Jwt:Secret"] ?? throw new InvalidOperationException("JWT Secret is not configured.");
 var jwtIssuer = builder.Configuration["Jwt:Issuer"] ?? throw new InvalidOperationException("JWT Issuer is not configured.");
@@ -95,23 +100,12 @@ app.MapGet("/api/transactions", [Authorize] async (HttpContext http, AppDbContex
     return Results.Ok(data);
 });
 
-app.MapPost("/api/transactions", [Authorize] async (HttpContext http, AppDbContext db, TransactionInput input) =>
+app.MapPost("/api/transactions", [Authorize] async (
+    HttpContext http, IMediator mediator, CreateTransactionCommand cmd) =>
 {
-    var userId = http.User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
-    var txn = new TransactionEntity
-    {
-        Id = Guid.NewGuid(),
-        Description = input.Description,
-        Amount = input.Amount,
-        Date = input.Date,
-        Type = input.Type,
-        UserId = userId!
-    };
-
-    db.Transactions.Add(txn);
-    await db.SaveChangesAsync();
-
-    return Results.Ok(txn);
+    cmd.UserId = http.User.FindFirst(ClaimTypes.NameIdentifier)!.Value;
+    var id = await mediator.Send(cmd);
+    return Results.Ok(new { id });
 });
 
 app.MapPut("/api/transactions/{id}", [Authorize] async (HttpContext http, AppDbContext db, Guid id, TransactionInput input) =>
