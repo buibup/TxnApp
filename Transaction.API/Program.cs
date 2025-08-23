@@ -30,6 +30,7 @@ builder.Services.AddDbContext<AppDbContext>(opt => opt.UseSqlite(connectionStrin
 builder.Services.AddScoped<IDomainEventDispatcher, DomainEventDispatcher>();
 builder.Services.AddMediatR(cfg => cfg.RegisterServicesFromAssemblyContaining<TransactionCreatedHandler>());
 builder.Services.AddScoped<ITransactionRepository, TransactionRepository>();
+builder.Services.AddAutoMapper(typeof(Transaction.Application.Mapping.TransactionProfile).Assembly);
 
 var jwtSecret = builder.Configuration["Jwt:Secret"] ?? throw new InvalidOperationException("JWT Secret is not configured.");
 var jwtIssuer = builder.Configuration["Jwt:Issuer"] ?? throw new InvalidOperationException("JWT Issuer is not configured.");

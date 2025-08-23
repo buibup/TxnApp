@@ -30,7 +30,6 @@ namespace Transaction.Infrastructure.Events
                         case TransactionCreatedEvent created:
                             await _mediator.Publish(new TransactionCreatedEventNotification(created));
                             break;
-                            // ✅ เพิ่ม event อื่น ๆ ตรงนี้ได้
                     }
                 }
 
