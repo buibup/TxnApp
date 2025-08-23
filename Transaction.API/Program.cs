@@ -14,6 +14,7 @@ using MediatR;
 using Transaction.Application.Commands.CreateTransaction;
 using Transaction.Application.Interfaces;
 using Transaction.Infrastructure.Repositories;
+using Transaction.Application.Queries.GetAllTransactions;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -92,12 +93,12 @@ app.MapPost("/api/auth/login", (JwtService jwtService, LoginRequest request) =>
     return Results.Unauthorized();
 });
 
-app.MapGet("/api/transactions", [Authorize] async (HttpContext http, AppDbContext db) =>
+app.MapGet("/api/transactions", [Authorize] async (
+    HttpContext http, IMediator mediator) =>
 {
-    var userId = http.User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
-    var data = await db.Transactions.Where(t => t.UserId == userId).ToListAsync();
-
-    return Results.Ok(data);
+    var userId = http.User.FindFirst(ClaimTypes.NameIdentifier)!.Value;
+    var request = await mediator.Send(new GetAllTransactionsQuery(userId));
+    return Results.Ok(request);
 });
 
 app.MapPost("/api/transactions", [Authorize] async (
